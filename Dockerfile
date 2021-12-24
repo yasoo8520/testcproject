@@ -1,5 +1,5 @@
 FROM gcc:latest
 COPY . /document/myapp
 WORKDIR /document/myapp
-RUN gcc -o calc.cpp
+RUN g++ -o calc.cpp
 CMD ["./myapp"]
